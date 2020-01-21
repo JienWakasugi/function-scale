@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>scale and recipe</title>
+<meta name="viewport" content="width=device-width">
+    
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://rawgit.com/kimmobrunfeldt/progressbar.js/master/dist/progressbar.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script> 
+<script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"></script>
+<script src="recipe-sclae.js"></script>
+
+<link href='http://fonts.googleapis.com/css?family=Paytone+One' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="style-checkbox.css">
+    
+
+</head>
+    
+<body>
+<div class="box1">
+    <article class="cooking-title">
+    <h1>親子丼</h1> 
+        <p><img src="img/cooking_image.jpg" alt="Image from ESP8266"></p>
+    </article>
+</div>
+    
+    
+<div class="box2">
+    <div class="contents">
+        材料
+    </div>
+</div>
+    
+
+<div class="box3"> 
+    <div class="foods-list">
+        
+        <input type="checkbox" name = "rice" value = "spices" id="box-1"> 
+        
+            <label for="box-1"> ごはん2杯        
+                <output id="count-1">0</output>g <progress id="myProgress-1" value="0" max="140">0%</progress> 
+            </label>
+            
+                    
+        <input type="checkbox" name = "foods" value = "spices" id="box-2">
+            <label for="box-2">鶏もも肉200g  
+                <output id="count-2">0</output>g <progress id="myProgress-2" value="0" max="100">0%</progress> 
+            </label>
+           
+
+        <input type="checkbox" id="box-3">
+            <label for="box-3">卵 3個</label>
+            
+        
+         <input type="checkbox" name = "foods" value = "spices" id="box-4">
+            <label for="box-4">玉葱 1/2個(100g) 
+                <output id="count-3">0</output>g <progress id="myProgress-4" value="0" max="100">0%</progress> 
+                <!--<p id="count-3" style="display:inline">0</p>-->
+            </label>
+        
+        <input type="checkbox" name = "foods" value = "spices" id="box-5">
+            <label for="box-5">三つ葉 1枚</label>
+        
+        <input type="checkbox" name = "water" value = "spices" id="box-6">
+        <label for="box-6">水 100cc &nbsp;
+            <output id="count-6">0</output>% <progress id="myProgress-6" value="0" max="100">0% </progress> 
+            <!--<p id="count-4" data-num="100">0</p>-->
+        </label>
+        
+         <input type="checkbox" name = "soysource" value = "soysource-bottle" id="box-7">
+            <label for="box-7">醤油 大さじ2 &nbsp;
+                <output id="count-7">0</output>% <progress id="myProgress-7" value="0" max="100">0% </progress>  
+                <!--<p id="count-5" data-num="100">0</p>--> 
+           </label>
+        
+         <input type="checkbox" name = "foods" value = "spices" id="box-8">
+            <label for="box-8">みりん 大さじ1 &nbsp;
+                <output id="count-8">0</output>% <progress id="myProgress-8" value="0" max="100">0% </progress>　
+        
+        　　</label>
+        
+         <input type="checkbox" name = "foods" value = "spices" id="box-9">
+            <label for="box-9">砂糖 大さじ1/2 &nbsp;
+                <output id="count-9">0</output>% <progress id="myProgress-9" value="0" max="100">0% </progress> 
+            </label>
+        
+        <input type="checkbox" name = "foods" value = "spices" id="box-10">
+            <label for="box-10">和風顆粒だし 小さじ1/3&nbsp; 
+                <output id="count-9">0</output>% <progress id="myProgress-10" value="0" max="100">0% </progress> 
+        </label>
+        
+    </div>
+    
+</div>
+
+    
+<div class="box6">
+    <div class="cooking_method">
+        作り方    
+    </div>
+</div>
+    
+<div class="box7">
+     <div class="cooking method">
+        <h3 class="howto-ttl icon-num01">親子丼の鶏肉はまとめて煮る！</h3>
+
+        <p>鳥もも肉は１〜２㎝角か、１㎝幅ほどのそぎ切りなど、食べやすく火の通りやすい大きさに切ります。</p>
+         
+        <h3 class="howto-ttl icon-num02">親子丼の卵の溶き方</h3>
+         <p>卵をボウルに入れたら、箸で黄身を潰したあとに10〜15回くらい溶きます。</p>
+         <p>白身の塊も少し残して仕上げています。また、卵と三つ葉は入れるタイミングは同じなので、溶いた卵に1〜2㎝幅に切った三つ葉も混ぜ合わせておきます。</p>
+         
+         <p>煮汁が沸いてきたら卵の入れ時です。火加減は弱めの中火で、ここで卵液の3/4を全体にまわしかけるように入れます。</p>
+         <p>１分ほどそのまま火にかけるのですが、ふつふつと鍋肌の煮汁が沸いて、まわりから卵が固まってくるので、固まりかけた卵をやさしく中央によせてあげます。</p>
+         
+    </div>
+    </div>
+   
+
+</body>
